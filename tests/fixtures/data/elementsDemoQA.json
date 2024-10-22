@@ -1,0 +1,25 @@
+[
+    {
+        "fullName": "standard_user",
+        "email": "suser_test@test.com",
+        "currentAddress": "this is only for testing purposes.",
+        "permanentAddress": "this is only for testing purposes.",
+        "status": "passed"
+
+    },
+    {
+        "fullName": "problem_user",
+        "email": "suser_test@test.com",
+        "currentAddress": "this is only for testing purposes.",
+        "permanentAddress": "this is only for testing purposes.",
+        "status": "passed"
+    },
+    {
+        "fullName": "performance_user",
+        "email": "suser_test@test.com",
+        "currentAddress": "this is only for testing purposes.",
+        "permanentAddress": "this is only for testing purposes.",
+        "status": "passed"
+    }
+    
+]
