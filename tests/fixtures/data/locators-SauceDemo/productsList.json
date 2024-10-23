@@ -1,0 +1,10 @@
+{
+    "clickOnProduct": "item-4-title-link",
+    "clickOnCard": "[data-test=\"shopping-cart-link\"]",
+    "clickAddToCardBtn": "[data-test=\"add-to-cart\"]",
+    "clickOnAtoZ":"[data-test=\"product-sort-container\"]",
+    "clickOnZtoA": "[data-test=\"product-sort-container\"]",
+    "shoppingBasket": "[data-test=\"shopping-cart-link\"]",
+    "continueShopping": "[data-test=\"continue-shopping\"]",
+    "removeProductBtn": "[data-test=\"remove\"]" 
+}

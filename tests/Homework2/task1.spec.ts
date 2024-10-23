@@ -14,7 +14,7 @@ test('Validate title of the appropriate page', async ({ page }) => {
 test('FAIL: Validate title of the appropriate page', async ({ page }) => {
     await page.goto('https://qinshiftacademy.com/');
     await page.getByRole('link', { name: 'Тестинг центар', exact: true }).click();
-    await expect(page.getByRole('heading', { name: 'Qinshift Academy123', exact: true })).toBeVisible();
+    await expect(page.getByRole('heading', { name: 'Qinshift Academy', exact: true })).toBeVisible();
   });
 
 });
