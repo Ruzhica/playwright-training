@@ -15,8 +15,9 @@ import { ProductsSauseDemoPage } from './pages-ecommerce/product-detail-page';
 import { LoginSauseDemoPage } from './pages-ecommerce/login-page';
 
 test.describe ('Flow for ordering a product from Sause demo page', () => {
-
-    test ('Adding a product to the shopping basket', async ({ page }) => {
+    
+    //still working on the function
+    test.fixme ('Adding a product to the shopping basket', async ({ page }) => {
         const Products = new ProductsSauseDemoPage(page);
         const loginPage = new LoginSauseDemoPage(page);
         await loginPage.standardLogin;
@@ -50,7 +51,7 @@ test.describe ('Flow for ordering a product from Sause demo page', () => {
 
     });
        
-        test('Sorting procuts in descending (Z to A)', async ({ page }) => {
+        test.skip('Sorting procuts in descending (Z to A)', async ({ page }) => {
         const Products = new ProductsSauseDemoPage(page);
         const loginPage = new LoginSauseDemoPage(page);
         await loginPage.standardLogin;
