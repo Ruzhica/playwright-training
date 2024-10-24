@@ -2,7 +2,7 @@
 
 import {test, expect } from '@playwright/test';
 import * as fs from 'fs';
-const data1 = JSON.parse(fs.readFileSync('../playwright-training/tests/fixtures/data/users.json', 'utf-8'));
+const data1 = JSON.parse(fs.readFileSync('../playwright-training/tests/fixtures/data/locators-SauceDemo/users.json', 'utf-8'));
 const login = JSON.parse(fs.readFileSync('../playwright-training/tests/fixtures/data/locators/login.json', 'utf-8'));
 
 

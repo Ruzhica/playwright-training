@@ -1,13 +1,11 @@
-//Task 6: 
-// Record a shopping flow from an ecommerce site.
-// Transform the entire structure into page objects 
-// Reuse in multiple shopping tests
+//Task 2: 
+// Add fix me tag of some test
 
 
 import {test, expect } from '@playwright/test';
 import * as fs from 'fs';
 const data1 = JSON.parse(fs.readFileSync('../playwright-training/tests/Lesson-2/single-user.json', 'utf-8'));
-const users = JSON.parse(fs.readFileSync('../playwright-training/tests/fixtures/data/users.json', 'utf-8'));
+const users = JSON.parse(fs.readFileSync('../playwright-training/tests/fixtures/data/locators-SauceDemo/users.json', 'utf-8'));
 
 
 import {SaucedemoPage} from './saucedemo-page';
@@ -32,7 +30,7 @@ test.describe ('Flow for ordering a product from Sause demo page', () => {
 
     });
 
-    test ('Remove it from shopping basket after adding it', async ({ page }) => {
+    test.fixme ('Remove it from shopping basket after adding it', async ({ page }) => {
         const Products = new ProductsSauseDemoPage(page);
         const loginPage = new LoginSauseDemoPage(page);
         await loginPage.standardLogin;
@@ -51,14 +49,14 @@ test.describe ('Flow for ordering a product from Sause demo page', () => {
 
     });
        
-        test.skip('Sorting procuts in descending (Z to A)', async ({ page }) => {
+        test('Sorting procuts in descending (Z to A) @smoke', async ({ page }) => {
         const Products = new ProductsSauseDemoPage(page);
         const loginPage = new LoginSauseDemoPage(page);
         await loginPage.standardLogin;
         await Products.sortByZtoA;
     });
 
-    test('Sorting procuts in ascending (A to Z)', async ({ page }) => {
+    test('Sorting procuts in ascending (A to Z)', {tag: 'smoke'}, async ({ page }) => {
         const Products = new ProductsSauseDemoPage(page);
         const loginPage = new LoginSauseDemoPage(page);
         await loginPage.standardLogin;

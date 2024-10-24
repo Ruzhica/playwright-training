@@ -2,9 +2,10 @@
 
 import {test, expect } from '@playwright/test';
 import * as fs from 'fs';
-const data1 = JSON.parse(fs.readFileSync('../playwright-training/tests/fixtures/data/elementsDemoQA.json', 'utf-8'));
+const data1 = JSON.parse(fs.readFileSync('../playwright-training/tests/fixtures/data/locators-demoQA/elementsDemoQA.json', 'utf-8'));
 const home = JSON.parse(fs.readFileSync('../playwright-training/tests/fixtures/data/locators-demoQA/home.json', 'utf-8'));
 const elements = JSON.parse(fs.readFileSync('../playwright-training/tests/fixtures/data/locators-demoQA/elements.json', 'utf-8'));
+
 
 
 data1.forEach((elementsDemoQA) => {

@@ -1,0 +1,8 @@
+{
+    "clickOnElements": "heading[name=\"Elements\"]",
+    "clickOnForms": "heading, { name: 'Forms' }",
+    "clickOnAlertsFrameWindows": "heading, { name: 'Alerts, Frame & Windows' }",
+    "clickOnWidgets": "heading, { name: 'Widgets' }",
+    "clickOnInteractions": "heading, { name: 'Interactions' }",
+    "clickOnBookStoreApp": "heading, { name: 'Book Store Application' }"
+}

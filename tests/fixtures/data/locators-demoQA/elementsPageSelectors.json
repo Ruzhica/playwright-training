@@ -1,0 +1,13 @@
+{
+    "elements": "heading, { name: 'Elements' }",
+    "getTextBox": "Text Box",
+    "fullName": "Full Name",
+    "email": "name@example.com",
+    "currentAddress": "Current Address", 
+    "permanentAddress": "#permanentAddress", 
+    "submitBtn": "button, { name: 'Submit' }",
+
+    "textBox" : "Check Box" 
+
+
+}
