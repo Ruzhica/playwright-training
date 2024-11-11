@@ -1,0 +1,27 @@
+{
+    "headingElements": {
+      "role": "heading",
+      "name": "Elements"
+    },
+    "clickOnForms": {
+      "role": "heading",
+      "name": "Forms"
+    },
+    "clickOnAlertsFrameWindows": {
+      "role": "heading",
+      "name": "Alerts, Frame & Windows"
+    },
+    "clickOnWidgets": {
+      "role": "heading",
+      "name": "Widgets"
+    },
+    "clickOnInteractions": {
+      "role": "heading",
+      "name": "Interactions"
+    },
+    "clickOnBookStoreApp": {
+      "role": "heading",
+      "name": "Book Store Application"
+    }
+  }
+  

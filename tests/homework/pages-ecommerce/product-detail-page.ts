@@ -52,14 +52,11 @@ export class ProductsSauseDemoPage {
     async checkCartItemCount(expectedCount: number = 1) {
         // Get the text content of the cart item count (e.g., the number inside the cart icon)
         const cartCountText = await this.shoppingBasket.textContent();
-
         if (cartCountText) {
             // Convert the cart count text to a number
             const cartCount = parseInt(cartCountText.trim(), 10);
-
             // Assert that the cart count matches the expected number (e.g., 1)
             expect(cartCount).toBe(expectedCount);
-
             // Optionally, log the result
             console.log(`Cart contains ${cartCount} items.`);
         } else {
