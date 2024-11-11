@@ -1,13 +1,39 @@
 {
-    "elements": "heading, { name: 'Elements' }",
-    "getTextBox": "Text Box",
-    "fullName": "Full Name",
-    "email": "name@example.com",
-    "currentAddress": "Current Address", 
-    "permanentAddress": "#permanentAddress", 
-    "submitBtn": "button, { name: 'Submit' }",
-
-    "textBox" : "Check Box" 
-
-
-}
+    "clickOnTextBox": {
+      "textBox": {
+        "locator": "li",
+        "filter": {
+          "hasText": "Text Box"
+        }
+      }
+    },
+    "submitButton": {
+      "role": "button",
+      "name": "Submit"
+    },
+    "clickOnElements": {
+      "role": "heading",
+      "name": "Elements"
+    },
+    "insertFullName": {
+      "placeholder": "Full Name"
+    },
+    "insertEmail": {
+      "placeholder": "name@example.com"
+    },
+    "insertCurrentAddress": {
+      "placeholder": "Current Address"
+    },
+    "insertPermanentAddress": {
+      "id": "permanentAddress"
+    },
+    "clickOnCheckBox": {
+        "checkBox": {
+          "locator": "li",
+          "filter": {
+            "hasText": "Check Box"
+          }
+        }
+      }
+  }
+  

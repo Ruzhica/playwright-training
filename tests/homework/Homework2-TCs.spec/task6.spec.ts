@@ -11,8 +11,8 @@ const users = JSON.parse(fs.readFileSync('../playwright-training/tests/fixtures/
 
 
 import {SaucedemoPage} from './saucedemo-page';
-import { ProductsSauseDemoPage } from './pages-ecommerce/product-detail-page';
-import { LoginSauseDemoPage } from './pages-ecommerce/login-page';
+import { ProductsSauseDemoPage } from '../pages-ecommerce/product-detail-page';
+import { LoginSauseDemoPage } from '../pages-ecommerce/login-page';
 
 test.describe ('Flow for ordering a product from Sause demo page', () => {
     

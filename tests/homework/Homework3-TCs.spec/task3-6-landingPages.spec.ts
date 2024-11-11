@@ -10,10 +10,9 @@ test.describe ('Checking all locators from the landing page and validating the n
 
     test ('Navigate to TextBox page;', async ({ page }) => {
         const landingPage = new DemoQALandingPage(page);
-        await landingPage.goto;
+        await landingPage.goto();
         await landingPage.clickOnElementsTextBtn();
 
-        //validate if user is on appropeate page by URL
         const isUrlCorrect = await landingPage.validateUrl('https://demoqa.com/elements');
         console.log('Is URL correct?', isUrlCorrect);
         expect(isUrlCorrect).toBe(true);
@@ -21,10 +20,9 @@ test.describe ('Checking all locators from the landing page and validating the n
 
     test ('Navigate to Forms page;', async ({ page }) => {
         const landingPage = new DemoQALandingPage(page);
-        await landingPage.goto;
+        await landingPage.goto();
         await landingPage.clickOnFormsTextBtn();
         
-        //validate if user is on appropeate page by URL
         const isUrlCorrect = await landingPage.validateUrl('https://demoqa.com/forms');
         console.log('Is URL correct?', isUrlCorrect);
         expect(isUrlCorrect).toBe(true);
@@ -32,7 +30,7 @@ test.describe ('Checking all locators from the landing page and validating the n
 
     test ('Navigate to Alerts, Frame & Windows page;', async ({ page }) => {
         const landingPage = new DemoQALandingPage(page);
-        await landingPage.goto;
+        await landingPage.goto();
         await landingPage.clickOnAlertsFrameWindowsTextBtn();
         
         //validate if user is on appropeate page by URL
@@ -43,7 +41,7 @@ test.describe ('Checking all locators from the landing page and validating the n
 
     test ('Navigate to Widgets  page;', async ({ page }) => {
         const landingPage = new DemoQALandingPage(page);
-        await landingPage.goto;
+        await landingPage.goto();
         await landingPage.clickOnWidgetsTextBtn();
         
         //validate if user is on appropeate page by URL
@@ -54,7 +52,7 @@ test.describe ('Checking all locators from the landing page and validating the n
 
     test ('Navigate to Interactions page;', async ({ page }) => {
         const landingPage = new DemoQALandingPage(page);
-        await landingPage.goto;
+        await landingPage.goto();
         await landingPage.clickOnInteractionsTextBtn();
         
         //validate if user is on appropeate page by URL
@@ -65,7 +63,7 @@ test.describe ('Checking all locators from the landing page and validating the n
 
     test ('Navigate to Book Store Application page;', async ({ page }) => {
         const landingPage = new DemoQALandingPage(page);
-        await landingPage.goto;
+        await landingPage.goto();
         await landingPage.clickOnBookStoreAppTextBtn();
         
         //validate if user is on appropeate page by URL

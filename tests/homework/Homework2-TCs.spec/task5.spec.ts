@@ -3,7 +3,7 @@
 
 import { test, expect } from '@playwright/test';
 import * as fs from 'fs';
-import { LoginSauseDemoPage } from './pages-ecommerce/login-page';
+import { LoginSauseDemoPage } from '../pages-ecommerce/login-page';
 
 // Load user data and locators
 const users = JSON.parse(fs.readFileSync('../playwright-training/tests/fixtures/data/locators-SauceDemo/users.json', 'utf-8'));

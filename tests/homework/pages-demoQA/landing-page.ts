@@ -14,8 +14,7 @@ export class DemoQALandingPage {
 
     constructor(page: Page) {
         this.page = page;
-        this.clickOnElements = page.getByRole('heading', { name: 'Elements' }); 
-        // this.clickOnElements = page.getByRole(landingPageSelectors.clickOnElements); 
+        this.clickOnElements = page.locator(landingPageSelectors.clickOnElements); 
         this.clickOnForms = page.getByRole(landingPageSelectors.clickOnForms);
         this.clickOnAlertsFrameWindows = page.getByRole(landingPageSelectors); 
         this.clickOnWidgets = page.getByRole(landingPageSelectors.clickOnAlertsFrameWindows); 
@@ -29,32 +28,31 @@ export class DemoQALandingPage {
     }
 
     async clickOnElementsTextBtn() { 
-        // await this.clickOnElements.focus();
-        await this.clickOnElements.hover();
-        await this.clickOnElements.click();
+        const locator = landingPageSelectors.headingElements;
+        await this.page.getByRole(locator.role, { name: locator.name }).click();
     }
 
     async clickOnFormsTextBtn() { 
-        await this.clickOnElements.focus();
-        await this.clickOnForms.click();
+        const locator = landingPageSelectors.clickOnForms;
+        await this.page.getByRole(locator.role, { name: locator.name }).click();
     }
 
     async clickOnAlertsFrameWindowsTextBtn() { 
-        await this.clickOnElements.focus();
-        await this.clickOnAlertsFrameWindows.click();
+        const locator = landingPageSelectors.clickOnAlertsFrameWindows;
+        await this.page.getByRole(locator.role, { name: locator.name }).click();
     }
 
     async clickOnWidgetsTextBtn() { 
-        await this.clickOnElements.focus();
-        await this.clickOnWidgets.click();
+        const locator = landingPageSelectors.clickOnWidgets;
+        await this.page.getByRole(locator.role, { name: locator.name }).click();
     }
     async clickOnInteractionsTextBtn() { 
-        await this.clickOnElements.focus();
-        await this.clickOnInteractions.click();
+        const locator = landingPageSelectors.clickOnInteractions;
+        await this.page.getByRole(locator.role, { name: locator.name }).click();
     }
     async clickOnBookStoreAppTextBtn() { 
-        await this.clickOnElements.focus();
-        await this.clickOnBookStoreApp.click();
+        const locator = landingPageSelectors.clickOnBookStoreApp;
+        await this.page.getByRole(locator.role, { name: locator.name }).click();
     }
 
     async validateUrl(expectedUrl: string | RegExp): Promise<boolean> {
